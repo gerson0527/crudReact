@@ -25,12 +25,12 @@ const UserForm = ({ getUsers, userSelected, setUserSelected, closeForm }) => {
     status();
     if (userSelected) {
       axios
-        .put(`https://users-crud.academlo.tech/users/${userSelected.id}/`, data)
+        .put(`https://api-crud-w5fr.onrender.com/${userSelected.id}/`, data)
         .then(() => {
           getUsers();
         });
     } else {
-      axios.post('https://users-crud.academlo.tech/users/', data).then(() => {
+      axios.post('https://api-crud-w5fr.onrender.com/', data).then(() => {
         getUsers();
         reset(inputNull);
       });
