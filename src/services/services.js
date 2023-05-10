@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://users-crud.academlo.tech/';
+const BASE_URL = 'https://api-crud-w5fr.onrender.com';
 
 export const getUser = async () => {
   try {
